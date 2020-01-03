@@ -1,0 +1,52 @@
+{
+    "iface_name": "eno1",
+    "log_file_name": "/var/log/main_sleep_sniffer.log",
+
+    "host_ip": "192.168.1.99",
+
+    "main_log_name": "main",
+    "arp_listener_log_name": "arp_listener",
+    "sniffer_log_name": "sniffer",
+    "ethernet_parser_log_name": "ethernet_parser",
+    "arp_parser_log_name": "arp_parser",
+    "ip_parser_log_name": "ip_parser",
+    "tcp_parser_log_name": "tcp_parser",
+
+    "log_priority_level": "info",
+
+    "tcp_listener_timeout_msec": 600000,
+    "tcp_listener_log_name": "tcp_listener",
+    "startup_timeout_ms": 30000,
+    "request_threshold": 25,
+
+    "port_weight_list": [
+        {
+            "port": 443,
+            "weight": 1
+        },
+        {
+            "port": 136,
+            "weight": 10
+        },
+        {
+            "port": 137,
+            "weight": 10
+        },
+        {
+            "port": 138,
+            "weight": 10
+        },
+        {
+            "port": 22,
+            "weight": 25
+        },
+        {
+            "port": 21,
+            "weight": 25
+        },
+        {
+            "port": 445,
+            "weight": 10
+        }
+    ]
+}

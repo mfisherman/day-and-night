@@ -1,0 +1,8 @@
+build:
+  image: mfisherman/gcc
+  script:
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make -j4
+    
